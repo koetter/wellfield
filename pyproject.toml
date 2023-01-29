@@ -8,9 +8,10 @@ version = "0.0.1"
 authors = [
   { name="Allan Køtter", email="allan.koetter@live.com" },
 ]
+
 description = "Python package for managing wellfields"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -20,3 +21,14 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/koetter/wellfield"
 "Bug Tracker" = "https://github.com/koetter/wellfield/issues"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+pythonpath = "src/"
+addopts = [
+    "--import-mode=importlib",
+    "-ra -q",
+]
+testpaths = [
+    "tests",
+]

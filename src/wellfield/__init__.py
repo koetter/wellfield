@@ -1,2 +1,5 @@
 
-print("__init__.py was executed")
+
+def main():
+    print("main was executed")
+
